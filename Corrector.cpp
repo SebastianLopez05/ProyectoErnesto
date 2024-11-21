@@ -24,13 +24,13 @@
 void	Diccionario			(char *szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[], int &iNumElementos)
 {
 
-	//Sustituya estas lineas por su código
+	//Sustituya estas lineas por su cÃ³digo
 	FILE* fpDiccionario;
 	char caracter;
 	int contaLetras=0;
 	char palabraCompleta[TAMTOKEN];
 	fopen_s(&fpDiccionario, szNombre, "r");
-	iNumElementos=1;
+	iNumElementos=0;
 	if (fpDiccionario != NULL)
 	{
 		while ((caracter = fgetc(fpDiccionario)) != EOF)
@@ -108,7 +108,7 @@ void	ListaCandidatas		(
 	int &	iNumLista)							//Numero de elementos en la szListaFinal
 {
 
-	//Sustituya estas lineas por su código
+	//Sustituya estas lineas por su cÃ³digo
 	strcpy(szListaFinal[0], szPalabrasSugeridas[ 0] ); //la palabra candidata
 	iPeso[0] = iEstadisticas[0];			// el peso de la palabra candidata
 	
@@ -126,7 +126,7 @@ void	ClonaPalabras(
 	char	szPalabrasSugeridas[][TAMTOKEN], 	//Lista de palabras clonadas
 	int &	iNumSugeridas)						//Numero de elementos en la lista
 {
-	//Sustituya estas lineas por su código
+	//Sustituya estas lineas por su cÃ³digo
 	strcpy(szPalabrasSugeridas[0], szPalabraLeida); //lo que sea que se capture, es sugerencia
 	iNumSugeridas = 1;							//Una sola palabra sugerida
 }
