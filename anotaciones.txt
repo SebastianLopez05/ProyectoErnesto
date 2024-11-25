@@ -1,0 +1,3 @@
+Esto es para anotar los cambios y no perder lo que llevo del proyecto
+
+-no sirvio el archivo por el orden de los for
