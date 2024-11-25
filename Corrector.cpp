@@ -46,7 +46,7 @@ void	Diccionario			(char *szNombre, char szPalabras[][TAMTOKEN], int iEstadistic
 							{
 								if (strcmp(palabraCompleta, szPalabras[i]) == 0)
 								{
-									palabraExiste = 0;
+									palabraExiste = 1;
 									iEstadisticas[i]++;
 								}
 							}
